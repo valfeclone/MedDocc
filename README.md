@@ -1,2 +1,2 @@
 # MedDocc
-repo buat meddocc fix
+repo buat meddocc
