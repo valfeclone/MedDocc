@@ -27,10 +27,10 @@
                     <a href="#meet-guide-id" class="nav-links" id="meet-click">Contact</a>
                 </li>
                 <li>
-                    <a href="#contact-us"class="nav-links" id="contact-click">Login</a>
+                    <a href="{{ route('login') }}" class="nav-links" id="contact-click">Login</a>
                 </li>
                 <li>
-                    <a href="#contact-us"class="nav-links" id="contact-click">Register</a>
+                    <a href="{{ route('register') }}" class="nav-links" id="contact-click">Register</a>
                 </li>
             </ul>
         </nav>
