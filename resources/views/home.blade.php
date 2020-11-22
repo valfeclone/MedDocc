@@ -34,6 +34,25 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="jumbotron">
+            <div class="image-jumbotron">
+                <img src="{{ asset('assets/doctor-home.png') }}" alt="Header Image" class="img-header">
+            </div>
+            <div class="container-column">
+                <div class="column-content">
+                    <p class="title-header green-light-color">Pesan Dokter</span></p>
+                    <p class="title-header green-light-color">Sekarang!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris justo, suscipit 
+                        sit amet nunc quis, faucibus ultricies nunc. Nullam efficitur semper elit, in vulputate quam. 
+                    </p>
+                </div>
+                <div class="column-button">
+                    <button class="button">PESAN</button>
+                </div>
+            </div>
+        </div>
     </header>
+
 </body>
 </html>
