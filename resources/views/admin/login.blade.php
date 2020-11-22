@@ -30,7 +30,7 @@
         </nav>
     </header>
 	<content>
-	<h1>LOGIN DOKTER</h1><br>
+		<h1>LOGIN ADMIN</h1><br>
 		<form>
 			<label for="uname">username</label><br>
 			<input type="text" id="uname" name="uname"><br>
