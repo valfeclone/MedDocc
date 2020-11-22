@@ -22,6 +22,14 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/admin/login', function () {
+    return view('admin.login');
+});
+
+Route::get('/doctor/login', function () {
+    return view('doctor.login');
+});
+
 Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
 
