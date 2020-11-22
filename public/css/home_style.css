@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+header{
+    font-family: 'Open-Sans', Arial, Helvetica, sans-serif;
+}
+
+
+.navbar{
+    font-size: 16px;
+    background-color: #16db93;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.main-nav{
+    list-style-type: none;
+    display: none;
+}
+
+.logo-company,
+.nav-links{
+    text-decoration: none;
+    color: #feffff;
+}
+
+.main-nav li{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.logo-company{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.hamburger-icon{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    color: #2B7A78;
+    font-size: 24px;
+}
+
+.active{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav{
+        display: flex;
+        margin-right: 30px;
+        justify-content: flex-end;
+    }
+
+    .main-nav li{
+        margin: 0;
+    }
+
+    .nav-links{
+        margin-left: 40px;
+    }
+
+    .logo-company{
+        margin-top: 0;
+    }
+
+    .hamburger-icon{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .jumbotron{
+        flex-direction: column-reverse;
+    }
+
+    .column-content{
+        flex-basis: 40%;
+        padding-top: 5%;
+    }
+
+    .image-jumbotron{
+        width: fit-content;
+    }
+
+    .about-container{
+        flex-direction: column;
+        margin-top: 25px;
+        height: 900px;
+    }
+
+    .content-section{
+        padding: 0px 15% 0 50px;
+        flex-basis: 70%;
+    }
+
+    .title-section{
+        flex-basis: 30%;
+        padding: 10% 0 0 50px;
+    }
+
+    .problem-article-odd{
+        flex-direction: column;
+    }
+
+    .problem-article-even{
+        flex-direction: column-reverse;
+    }
+
+    .problem-article-even .title-section,
+    .problem-article-even .content-section,
+    .problem-article-odd .title-section,
+    .problem-article-odd .content-section{
+        padding: 30px;
+    }
+
+    .title-button{
+        margin: 2% 30%;
+        padding: 2% 2%;
+    }
+
+    .container-card{
+        flex-direction: column;
+    }
+
+    .container-header-flex{
+        flex-direction: column;
+    }
+    
+    .footer-about-contact{
+        flex-direction: column;
+    }
+    
+    .footer-product-sosmed{
+        flex-direction: column;
+    }
+
+    .flex-row p,
+    .flex-row h3{
+        margin: 0px 10px 0px 0px;
+        text-align: center;
+        color: #feffff;
+        line-height: 25px;
+    }
+
+    .flex-row .logo-company{
+        display: block;
+    }
+
+    .product-list{
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-icon{
+        display: none;
+    }
+
+    .footer-icon-mobile .fa{
+        display: inline-block;
+        transition-duration: 0.5s;
+    }
+
+    .footer-icon-mobile .fa:hover{
+        border: 1px solid #22DFC0;
+        background-color: #17252A;
+        color: #22DFC0;
+    }
+
+
+    .form-section{
+        flex-direction: column;
+    }
+
+    .main-form input{
+        padding: 10px 30% 10px 10px;
+    }
+
+    .submit-form .submit-button{
+        margin: 10% 30%;
+    }
+
+    .my-profile{
+        margin-left: 100px;
+    }
+
+    .my-profile .image-profile img{
+        width: 150px;
+    }
+}
