@@ -30,6 +30,26 @@ Route::get('/doctor/login', function () {
     return view('doctor.login');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/reserve', function () {
+    return view('reserve');
+});
+
+Route::get('/waiting', function () {
+    return view('waiting');
+});
+
+Route::get('/examination', function () {
+    return view('examination');
+});
+
+Route::get('/history', function () {
+    return view('history');
+});
+
 Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
 
