@@ -18,7 +18,7 @@
         <content>
             <h1>MEDDOC</h1><br>
             <h1>HISTORY USE</h1><br>
-			# tampilkan hasil pemeriksaan secara berkala
+			<!-- tampilkan hasil pemeriksaan secara berkala -->
 			
             <div class="login-form">
                 <form>

@@ -18,10 +18,10 @@
         <content>
             <h1>MEDDOC</h1><br>
             <h1>HASIL PEMERIKSAAN</h1><br>
-			# tampilkan durasi pemeriksaan
-			# tampilkan hasil pemeriksaan
-			# tampilkan lokasi pemeriksaan
-			# 
+			<!-- tampilkan durasi pemeriksaan -->
+			<!-- tampilkan hasil pemeriksaan -->
+			<!-- tampilkan lokasi pemeriksaan -->
+
             <div class="login-form">
                 <form>
                     <div class="login-input">

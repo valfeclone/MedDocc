@@ -18,10 +18,11 @@
         <content>
             <h1>MEDDOC</h1><br>
             <h1>TUNGGU DOKTER</h1><br>
-			# user telah kirim keluhan
-			# tunggu sistem mencari dokter
-			# tunggu dokter acc request kita
-			# kasih gif "searching" sabi
+			<!-- user telah kirim keluhan -->
+			<!-- tunggu sistem mencari dokter -->
+			<!-- tunggu dokter acc request kita -->
+			<!-- kasih gif "searching" sabi -->
+
             <div class="login-form">
                 <form>
                     <div class="login-input">

@@ -18,10 +18,10 @@
         <content>
             <h1>MEDDOC</h1><br>
             <h1>UBAH PROFIL USER</h1><br>
-			# tampilkan dan ubah nama
-			# tampilkan dan ubah nomor hp
-			# tampilkan dan ubah email
-			# tampilkan dan ubah nama penyakit bawaan
+			<!-- tampilkan dan ubah nama -->
+			<!-- tampilkan dan ubah nomor hp -->
+			<!-- tampilkan dan ubah email -->
+			<!-- tampilkan dan ubah nama penyakit bawaan -->
 			
             <div class="login-form">
                 <form>

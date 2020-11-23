@@ -18,7 +18,7 @@
         <content>
             <h1>MEDDOC</h1><br>
             <h1>PESAN DOKTER</h1><br>
-			# isi form buat pesan dokter, keluhan penyakit dll
+			<!-- isi form buat pesan dokter, keluhan penyakit dll -->
             <div class="login-form">
                 <form>
                     <div class="login-input">
