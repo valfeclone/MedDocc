@@ -16,8 +16,8 @@ class CreateDoctorsTable extends Migration
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
 			$table->string('name');
-			$table->string('path_pract_permit');
-			$table->boolean('status_pract_permit');
+			$table->string('path_pract_permit')->nullable();
+			$table->boolean('status_pract_permit')->default(false);
 			$table->string('email')->unique();
 			$table->string('password');
             $table->timestamps();

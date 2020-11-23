@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DoctorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,9 +27,15 @@ Route::get('/admin/login', function () {
     return view('admin.login');
 });
 
+//route buat doctor
 Route::get('/doctor/login', function () {
     return view('doctor.login');
 });
+Route::get('/doctor/register', function () {
+    return view('doctor.register');
+});
+Route::post('/doctor/register', [DoctorController::class, 'register' ])
+    ->middleware(['guest']);
 
 Route::get('/profile', function () {
     return view('profile');
