@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #feffff;
+}
+
+.waiting-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #16db93;
+}
