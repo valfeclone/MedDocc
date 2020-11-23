@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <div class="column-button">
-                    <button class="button">PESAN</button>
+                    <a href="/reserve"> <button class="button" >PESAN</button> </a>
                 </div>
             </div>
         </div>

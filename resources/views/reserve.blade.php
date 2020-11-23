@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
-    <link href="{{ asset('/css/login-style.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/reserve-style.css') }}" rel="stylesheet">
 
     <title>MEDDOC</title>
 </head>
@@ -22,17 +22,22 @@
             <div class="login-form">
                 <form>
                     <div class="login-input">
-                    <label for="uname">username:</label><br>
-                    <input type="text" id="uname" name="uname"><br>
+                        <label for="uname">Nama</label><br>
+                        <input type="text" id="uname" name="uname"><br>
                     </div>
 
                     <div class="login-input">
-                        <label for="password">password:</label><br>
-                        <input type="password" id="password" name="password">
+                        <label for="password">Lokasi</label><br>
+                        <input type="password" id="password" name="password"><br>
+                    </div> 
+
+                    <div class="login-input">
+                        <label for="password">Keluhan</label><br>
+                        <input type="password" id="password" name="password"><br>
                     </div> 
 
                     <div class="submit-form">
-                        <p class="submit-button font-tipis small-text">login</p>
+                        <p class="submit-button font-tipis small-text">Submit</p>
                     </div>
                 </form>
             </div>
