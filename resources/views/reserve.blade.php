@@ -27,14 +27,14 @@
                     </div>
 
                     <div class="login-input">
-                        <label for="password">Lokasi</label><br>
-                        <input type="password" id="password" name="password"><br>
-                    </div> 
+                        <label for="uname">Lokasi</label><br>
+                        <input type="text" id="lokasi" name="lokasi"><br>
+                    </div>
 
                     <div class="login-input">
-                        <label for="password">Keluhan</label><br>
-                        <input type="password" id="password" name="password"><br>
-                    </div> 
+                        <label for="uname">Keluhan</label><br>
+                        <input type="text" id="keluhan" name="keluhan"><br>
+                    </div>
 
                     <div class="submit-form">
                         <p class="submit-button font-tipis small-text">Submit</p>
