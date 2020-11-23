@@ -18,7 +18,7 @@
             <span class="hamburger-icon" id="hamburger-icon-id">
                 <i class="fa fa-bars"></i>
             </span>
-            <a href="#" class="logo-company"><em><strong>MEDDOC</strong></em></a>
+            <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
             <ul class="main-nav" id="main-nav-id">
                 <li>
                     <a href="#about-us" class="nav-links" id="about-click">About Us</a>
@@ -43,8 +43,8 @@
                 <div class="column-content">
                     <p class="title-header green-light-color">Pesan Dokter</span></p>
                     <p class="title-header green-light-color">Sekarang!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris justo, suscipit 
-                        sit amet nunc quis, faucibus ultricies nunc. Nullam efficitur semper elit, in vulputate quam. 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris justo, suscipit
+                        sit amet nunc quis, faucibus ultricies nunc. Nullam efficitur semper elit, in vulputate quam.
                     </p>
                 </div>
                 <div class="column-button">
