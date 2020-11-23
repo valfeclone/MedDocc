@@ -19,15 +19,15 @@
 			<!-- tunggu sistem mencari dokter -->
 			<!-- tunggu dokter acc request kita -->
 			<!-- kasih gif "searching" sabi -->
+           
             <div class="gif-wait">
                 <img src="{{ asset('assets/gif-waiting.gif') }}" alt="Header Image" class="img-header">
             </div>
-
+            
             <div class="wait-text">
                 <h1>MEDDOC</h1><br>
                 <h1>MENUNGGU DOKTER</h1><br>
             </div>
-            
         </content>
     </div>
 </body>

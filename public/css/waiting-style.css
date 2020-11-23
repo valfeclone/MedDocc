@@ -13,5 +13,9 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: #16db93;
+    color: #AEFAE3;
+}
+
+.gif-wait{
+    height: 500px;
 }
