@@ -21,17 +21,17 @@
             <div class="login-form">
                 <form>
                     <div class="login-input">
-                    <label for="uname">username:</label><br>
-                    <input type="text" id="uname" name="uname"><br>
+                    <!--<label for="uname">username:</label><br>-->
+                    <input type="text" id="uname" placeholder="Username" name="uname"><br>
                     </div>
 
                     <div class="login-input">
-                        <label for="password">password:</label><br>
-                        <input type="password" id="password" name="password">
+                        <!--<label for="password">password:</label><br>-->
+                        <input type="password" placeholder="Password" id="password" name="password">
                     </div> 
 
                     <div class="submit-form">
-                        <p class="submit-button font-tipis small-text">login</p>
+                        <p class="submit-button font-tipis small-text">LOGIN</p>
                     </div>
                 </form>
             </div>
