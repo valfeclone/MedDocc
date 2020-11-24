@@ -50,6 +50,10 @@ body{
     border: 1px solid #17252A;
 }
 
+.file-input{
+    padding: 0px 35% 10px 0px;
+}
+
 .submit-form{
     flex-basis: 16%;
 }
@@ -58,11 +62,13 @@ body{
     display: block;
     margin: 10% 30%;
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px 50px;
     border-radius: 50px;
     cursor: pointer;
     background-color: #16db93;
     color: #feffff;
 }
+
+
 
 

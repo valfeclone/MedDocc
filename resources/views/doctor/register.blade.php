@@ -41,13 +41,13 @@
                         <input type="password" id="repassword" name="repassword" placeholder="Re-password" class="input" required>
                     </div>
 
-                    <div class="login-input">
+                    <div class="login-input file-input">
                         <label for="file-upload-1" class="input input-file-label">Upload Bukti Izin Praktik</label><br>
                         <input type="file" placeholder="Upload Bukti Praktik" name="bukti-praktik" id="file-upload-1" accept=".jpg,.jpeg,.png">
                     </div> 
 
                     <div class="submit-form">
-                        <input type="submit" align="center" class="submit-button font-tipis small-text" value="REGISTER">
+                        <input type="submit" class="submit-button font-tipis small-text" value="REGISTER">
                     </div>
                 </form>
             </div>
