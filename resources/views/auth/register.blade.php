@@ -60,7 +60,7 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label value="{{ __('Confirm Password') }}" />
+                <x-jet-label value="{{ __('Konfirmasi Password') }}" />
                 <x-jet-input class="block mt-1 w-full" placeholder="Re-Password" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
