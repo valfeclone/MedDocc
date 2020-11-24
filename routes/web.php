@@ -23,10 +23,7 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/about-us', function () {
-    return view('about-us');
-});
-
+//route buat admin
 Route::get('/admin/login', function () {
     return view('admin.login');
 });
@@ -35,12 +32,16 @@ Route::get('/admin/login', function () {
 Route::get('/doctor/login', function () {
     return view('doctor.login');
 });
+Route::post('/doctor/login', [DoctorController::class, 'login' ])
+    ->middleware(['guest']);
+
 Route::get('/doctor/register', function () {
     return view('doctor.register');
 });
 Route::post('/doctor/register', [DoctorController::class, 'register' ])
     ->middleware(['guest']);
 
+//
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -72,4 +73,8 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
 
 Route::get('/test', function () {
 	return view('this');
+});
+
+Route::get('/about-us', function () {
+    return view('about-us');
 });

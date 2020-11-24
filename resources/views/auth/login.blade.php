@@ -63,17 +63,17 @@
             <div class="block mt-4">
                 <label class="flex items-center">
                     <input type="checkbox" class="form-checkbox" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                    <span class="ml-2 text-sm text-gray-600">{{ __('Ingat Saya') }}</span>
                 </label>
             </div>
 
             <div class="flex items-center justify-end mt-4">
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" style="margin-right:10px" href="{{ route('register') }}">
-                      {{ __('Sign Up')}}
+                      {{ __('Daftar')}}
                     </a>
                 @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
+                        {{ __('Lupa password?') }}
                     </a>
                 @endif
 

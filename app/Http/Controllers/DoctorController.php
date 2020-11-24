@@ -28,7 +28,7 @@ class DoctorController extends Controller
      *
      * @var string
      */
-    // protected $redirectTo = RouteServiceProvider::DASHPESERTA;
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -73,4 +73,18 @@ class DoctorController extends Controller
                     
         echo($newDoc);
     }
+
+    public function login (Request $request)
+	{
+        ddd($request);
+        $credentials = $request->only('email', 'password');
+		
+		if (Auth::guard('doctor')->attempt($credentials)) {
+            // return redirect()->intended('/dashboard');
+            return('login dokter sukses');
+		}
+		else {
+			return back()->withErrors(['field_name' => ['LOGIN GAGAL']]);
+		}
+	}
 }

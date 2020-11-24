@@ -37,7 +37,7 @@
                     </div> 
 
                     <div class="login-input">
-                        <label for="repassword">Confirm Password</label><br>
+                        <label for="repassword">Konfirmasi Password</label><br>
                         <input type="password" id="repassword" name="repassword" placeholder="Re-password" class="input" required>
                     </div>
 
