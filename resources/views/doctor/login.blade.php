@@ -19,10 +19,11 @@
             <h1>MEDDOC</h1><br>
             <h1>LOGIN DOKTER</h1><br>
             <div class="login-form">
-                <form>
+                <form method="POST" action="/doctor/login">
+                    @csrf
                     <div class="login-input">
                     <!--<label for="uname">username:</label><br>-->
-                    <input type="text" id="uname" name="uname" placeholder="Username"><br>
+                    <input type="email" id="email" name="email" placeholder="E-mail"><br>
                     </div>
 
                     <div class="login-input">
@@ -30,9 +31,13 @@
                         <input type="password" id="password" name="password" placeholder="Password">
                     </div> 
 
-                    <div class="submit-form">
+                    <!-- <div class="submit-form">
                         <p class="submit-button font-tipis small-text">LOGIN</p>
-                    </div>
+                    </div> -->
+                    <x-jet-button class="ml-4">
+                    {{ __('Login') }}
+                    </x-jet-button>
+
                 </form>
             </div>
         </content>
