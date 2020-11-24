@@ -19,7 +19,8 @@ class CreateDoctorsTable extends Migration
 			$table->string('path_pract_permit')->nullable();
 			$table->boolean('status_pract_permit')->default(false);
 			$table->string('email')->unique();
-			$table->string('password');
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
