@@ -50,7 +50,7 @@ Route::get('/waiting', function () {
 });
 
 Route::get('/examination', function () {
-    return view('examination');
+    return view('invoice');
 });
 
 Route::get('/history', function () {

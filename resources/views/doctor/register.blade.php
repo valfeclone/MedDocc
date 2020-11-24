@@ -22,22 +22,22 @@
                 <form method="POST" action="/doctor/register" class="register__form" id="theform" enctype="multipart/form-data">
                     @csrf
                     <div class="login-input">
-                        <label for="name">Nama:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Name" class="input" required autofocus><br>
+                        <label for="name">Nama</label><br>
+                        <input type="text" id="name" name="name" placeholder="Louis Raven" class="input" required autofocus><br>
                     </div>
 
                     <div class="login-input">
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" placeholder="E-mail" class="input" required><br>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="raven123@gmail.com" class="input" required><br>
                     </div> 
 
                     <div class="login-input">
-                        <label for="password">Password:</label><br>
+                        <label for="password">Password</label><br>
                         <input type="password" id="password" name="password" placeholder="Password" class="input" required><br>
                     </div> 
 
                     <div class="login-input">
-                        <label for="repassword">Confirm Password:</label><br>
+                        <label for="repassword">Confirm Password</label><br>
                         <input type="password" id="repassword" name="repassword" placeholder="Re-password" class="input" required>
                     </div>
 
@@ -47,7 +47,7 @@
                     </div> 
 
                     <div class="submit-form">
-                        <input type="submit" class="submit-button font-tipis small-text" value="Register">
+                        <input type="submit" align="center" class="submit-button font-tipis small-text" value="REGISTER">
                     </div>
                 </form>
             </div>
