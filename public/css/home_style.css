@@ -142,6 +142,129 @@ header{
     margin-left: 30%;
 }
 
+footer{
+    background-color: #17252A;
+    height: 50%;
+    color: #feffff;
+    margin: 250px 0px 0px 0px;
+}
+
+.container-header-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-about-contact{
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-product-sosmed{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row{
+    flex-basis: 50%;
+}
+
+.flex-row .logo-company{
+    padding: 25px;
+}
+
+.flex-row p,
+.flex-row h3{
+    margin: 0px 10px 0px 80px;
+    text-align: justify;
+    color: #feffff;
+    line-height: 25px;
+}
+
+.flex-row .card-section{
+    text-align: left;
+}
+
+.product-list{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 105px; 
+}
+
+.product-list li{
+    margin-bottom: 7%;
+}
+
+.product-list li a{
+    text-decoration: none;
+    color: #feffff;
+}
+
+.flex-row .fa{
+    padding: 20px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 2px 5px 4px;
+    background-color: #16db93;
+    color: #17252A;
+}
+
+.footer-icon{
+    tab-size: 4px;
+}
+
+.footer-icon a{
+    display: block;
+    padding: 0px 20px 20px 20px;
+    margin: 0px 15px 0px 65px;
+    color: #feffff;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-icon i{
+    padding: 5px;
+}
+
+.footer-icon-mobile{
+    text-align: center;
+}
+
+.footer-icon-mobile .fa{
+    padding: auto 0;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin: 5px 7px;
+    border-radius: 0%;
+    background-color: #16db93;
+    color: #17252A;
+    display: none;
+}
+
+.bottom-footer{
+    background-color: #17252A;
+    color: #feffff;
+    text-align: center;
+    padding: 2%;
+}
+
+.border-top{
+    margin: 0 5%;
+    border-top: 1px solid #16db93;
+}
+
+.border-top p{
+    padding: 2%;
+}
+
 @media screen and (min-width: 768px){
     .navbar{
         display: flex;
