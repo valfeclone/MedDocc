@@ -77,12 +77,12 @@
                         <p><strong>+621916179313</strong></p>
                         <br>
                         <p>E-mail contact:</p>
-                        <p><strong>info@selfimprovement.com</strong></p>
+                        <p><strong>info@meddoc.com</strong></p>
                         <h3 class="white-color logo-company">Address</h3>
                         <br>
-                        <p><strong>Jalan Pulau Maluku 3 No. 199</strong></p>
-                        <p><strong>Denpasar</strong></p>
-                        <p><strong>Bali</strong></p>
+                        <p><strong>Jalan Pogung Palace Kos Fadhlan</strong></p>
+                        <p><strong>Sleman</strong></p>
+                        <p><strong>Yogyakarta</strong></p>
                     </div>
                 </div>
             </div>
