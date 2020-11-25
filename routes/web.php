@@ -23,7 +23,19 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::post('/user/register', function () {
+    return view('register');
+});
+
+Route::get('/user/register', function () {
+    return view('register');
+});
+
 //route buat admin
+Route::post('/admin/login', function () {
+    return view('admin.login');
+});
+
 Route::get('/admin/login', function () {
     return view('admin.login');
 });
@@ -69,10 +81,6 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/user/new', "pages.user.user-new")->name('user.new');
     Route::view('/user/edit/{userId}', "pages.user.user-edit")->name('user.edit');
 	
-});
-
-Route::get('/test', function () {
-	return view('this');
 });
 
 Route::get('/about-us', function () {
