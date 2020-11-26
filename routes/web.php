@@ -23,18 +23,20 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::post('/user/register', function () {
-    return view('register');
-});
+//buat user
+Route::post('/register', [UserController::class, 'register'])
+    ->middleware(['guest']);
 
+//buat user punya yarda
+Route::post('/user/register', [UserController::class, 'register'])
+    ->middleware(['guest']);
 Route::get('/user/register', function () {
     return view('register');
 });
 
 //route buat admin
-Route::post('/admin/login', function () {
-    return view('admin.login');
-});
+Route::post('/admin/login', [AdminController::class, 'login'])
+    ->middleware(['guest']);
 
 Route::get('/admin/login', function () {
     return view('admin.login');

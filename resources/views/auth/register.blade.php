@@ -41,7 +41,7 @@
 
         <x-jet-validation-errors class="mb-4" />
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="/register">
             @csrf
 
             <div>
@@ -56,7 +56,7 @@
 			<br>
 			<div>
                 <x-jet-label value="{{ __('No. Telp') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="081234567890" type="tel" name="telp" :value="old('tel')" :value="old('tel')" autocomplete='tel' required />
+                <x-jet-input class="block mt-1 w-full" placeholder="081234567890" type="tel" name="telephone" :value="old('tel')" :value="old('tel')" autocomplete='tel' required />
             </div>
 
             <div class="mt-4">

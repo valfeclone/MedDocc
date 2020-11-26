@@ -56,7 +56,7 @@
 			<br>
 			<div>
                 <x-jet-label value="{{ __('No. Telp') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="081234567890" type="tel" name="tel" :value="old('tel')" autocomplete='tel' required />
+                <x-jet-input class="block mt-1 w-full" placeholder="081234567890" type="tel" name="telephone" :value="old('tel')" autocomplete='tel' required />
             </div>
 
             <div class="mt-4">

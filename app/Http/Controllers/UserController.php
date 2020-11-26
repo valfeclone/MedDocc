@@ -21,12 +21,11 @@ class UserController extends Controller
 
 	public function register (Request $request)
 	{
-		$ddd($request);
 		$validatedUser = request()->validate([
 			'name' => 'required',
 			'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
 			'password' => ['required', 'string', 'min:8'],
-			'telp' => ['required', 'tel'],
+			'telephone' => ['required'],
 			'address' => ['required', 'string'],
 		]);
 		
@@ -34,11 +33,11 @@ class UserController extends Controller
 			'name' => $validatedUser['name'],
 			'email' => $validatedUser['email'],
 			'password' => Hash::make($validatedUser['password']),
-			'telp' => $validatedUser['telp'],
-			'address' => ['address'],
+			'telephone' => $validatedUser['telephone'],
+			'address' => $validatedUser['address'],
 		]);
 		
-		echo($newUser);
+		return ($newUser);
 	}
 
 	public function login (Request $request)
