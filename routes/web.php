@@ -23,9 +23,13 @@ Route::get('/home', function () {
     return view('home');
 });
 
-//buat user
+//buat register user
+Route::view('/register', "auth.register")->name("register");
 Route::post('/register', [UserController::class, 'register'])
     ->middleware(['guest']);
+
+//buat login user
+Route::view('/login', "auth.login")->name("login");
 
 //buat user punya yarda
 Route::post('/user/register', [UserController::class, 'register'])
