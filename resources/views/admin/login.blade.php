@@ -19,10 +19,11 @@
             <h1>MEDDOC</h1><br>
             <h1>LOGIN ADMIN</h1><br>
             <div class="login-form">
-                <form>
+                <form method="POST" action="/admin/login">
+                    @csrf
                     <div class="login-input">
                     <!--<label for="uname">username:</label><br>-->
-                    <input type="text" id="uname" placeholder="Username" name="uname"><br>
+                    <input type="text" id="email" placeholder="E-mail" name="email"><br>
                     </div>
 
                     <div class="login-input">
@@ -30,9 +31,9 @@
                         <input type="password" placeholder="Password" id="password" name="password">
                     </div> 
 
-                    <div class="submit-form">
-                        <p class="submit-button font-tipis small-text">LOGIN</p>
-                    </div>
+                    <x-jet-button class="ml-4">
+                    {{ __('Login') }}
+                    </x-jet-button>
                 </form>
             </div>
         </content>
