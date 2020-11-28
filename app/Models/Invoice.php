@@ -14,6 +14,10 @@ class Invoice extends Model
      *
      * @var array
      */
-    protected $guarded = [
+    protected $fillable = [
+        'status',
+        'user_id',
+        'doctor_id',
+        'report_id',
     ];
 }

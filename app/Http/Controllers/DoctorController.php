@@ -51,7 +51,7 @@ class DoctorController extends Controller
         // ddd($request);
         $validatedDoc = request()->validate([
         'name' => 'required',
-        'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+        'email' => ['required', 'string', 'email', 'max:255', 'unique:doctors'],
         'password' => ['required', 'string', 'min:8'],
         'bukti-praktik' => 'required',
         ]);
@@ -76,7 +76,7 @@ class DoctorController extends Controller
 
     public function login (Request $request)
 	{
-        ddd($request);
+        // ddd($request);
         $credentials = $request->only('email', 'password');
 		
 		if (Auth::guard('doctor')->attempt($credentials)) {

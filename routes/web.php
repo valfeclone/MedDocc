@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -60,7 +61,12 @@ Route::get('/doctor/register', function () {
 Route::post('/doctor/register', [DoctorController::class, 'register' ])
     ->middleware(['guest']);
 
-//
+    
+//route dasboard user
+// Route::get('/user/dashboard', function () {
+//     return view('user-dashboard');
+// });
+    
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -83,17 +89,21 @@ Route::get('/history', function () {
 
 Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
-
+    
     Route::get('/user', [ UserController::class, "index_view" ])->name('user');
     Route::view('/user/new', "pages.user.user-new")->name('user.new');
     Route::view('/user/edit/{userId}', "pages.user.user-edit")->name('user.edit');
-	
+    Route::get('/user/dashboard', function () {
+        return view('user-dashboard');
+    });
+    
+    //route buat buat report
+    Route::get('/user/report', function () {
+        return view('user.makereport');
+    });
+    Route::post('/user/report', [ReportController::class, 'makeReport' ]);
 });
-
-Route::get('/about-us', function () {
+    
+    Route::get('/about-us', function () {
     return view('about-us');
-});
-
-Route::get('/user-dashboard', function () {
-    return view('user-dashboard');
 });
