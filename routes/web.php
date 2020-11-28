@@ -93,3 +93,7 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
 Route::get('/about-us', function () {
     return view('about-us');
 });
+
+Route::get('/user-dashboard', function () {
+    return view('user-dashboard');
+});
