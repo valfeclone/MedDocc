@@ -43,7 +43,6 @@ Route::get('/user/register', function () {
 //route buat admin
 Route::post('/admin/login', [AdminController::class, 'login'])
     ->middleware(['guest']);
-
 Route::get('/admin/login', function () {
     return view('admin.login');
 });
@@ -98,12 +97,18 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     });
     
     //route buat buat report
-    Route::get('/user/reserve', function () {
-        return view('user.makereport');
-    });
+    // Route::get('/user/reserve', function () {
+    //     return view('user.makereport');
+    // });
+    Route::view('/user/reserve', "user.makereport");
     Route::post('/user/reserve', [ReportController::class, 'makeReport' ]);
 });
     
-    Route::get('/about-us', function () {
+Route::get('/about-us', function () {
     return view('about-us');
 });
+
+Route::get('/admin/doctor', [ AdminController::class, 'indexDoctor']);
+Route::get('/admin/doctor/verified', [ AdminController::class, 'indexDoctorVerif']);
+Route::get('/admin/doctor/unverified', [ AdminController::class, 'indexDoctorUnverif']);
+Route::post('/admin/doctor/alter/{id}', [ AdminController::class, 'alterDocPermi']);
