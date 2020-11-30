@@ -21,10 +21,10 @@
             <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
             <ul class="main-nav" id="main-nav-id">
                 <li>
-                    <a href="#about-us" class="nav-links" id="about-click">About Us</a>
+                    <a href="/about-us" class="nav-links" id="about-click">About Us</a>
                 </li>
                 <li>
-                    <a href="#meet-guide-id" class="nav-links" id="meet-click">Contact</a>
+                    <a href="#" class="nav-links" id="meet-click">Contact</a>
                 </li>
                 <li>
                     <a href="{{ route('login') }}" class="nav-links" id="contact-click">Login</a>
@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <div class="column-button">
-                    <a href="/reserve"> <button class="button" >PESAN</button> </a>
+                    <a href="/user/reserve"> <button class="button" >PESAN</button> </a>
                 </div>
             </div>
         </div>

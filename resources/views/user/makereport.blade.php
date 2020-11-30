@@ -19,7 +19,7 @@
             <h1>MEDDOC</h1><br>
             <h1>BUAT LAPORAN</h1><br>
             <div class="login-form">
-                <form method="POST" action="/user/report" class="register__form" id="theform" enctype="multipart/form-data">
+                <form method="POST" action="/user/reserve" class="register__form" id="theform" enctype="multipart/form-data">
                     @csrf
                     <div class="login-input">
                         <label for="name">Nama Pasien</label><br>

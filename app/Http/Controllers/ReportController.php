@@ -33,6 +33,6 @@ class ReportController extends Controller
 			'report_id' => $newReport['id'],
 		]);
 		
-		return ($newReport);
+		return redirect()->intended('waiting');
 	}
 }

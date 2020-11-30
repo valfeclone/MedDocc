@@ -98,10 +98,10 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     });
     
     //route buat buat report
-    Route::get('/user/report', function () {
+    Route::get('/user/reserve', function () {
         return view('user.makereport');
     });
-    Route::post('/user/report', [ReportController::class, 'makeReport' ]);
+    Route::post('/user/reserve', [ReportController::class, 'makeReport' ]);
 });
     
     Route::get('/about-us', function () {
