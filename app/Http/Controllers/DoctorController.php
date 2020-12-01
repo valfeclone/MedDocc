@@ -6,46 +6,13 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\Doctor;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 
 class DoctorController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
-
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = RouteServiceProvider::HOME;
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-    
-    /**
-     * Get a validator for an incoming registration request.
-     *
-     * @param  array  $data
-     * @return \Illuminate\Contracts\Validation\Validator
-     */
     protected function register(Request $request)
     {
         // ddd($request);
@@ -79,12 +46,48 @@ class DoctorController extends Controller
         // ddd($request);
         $credentials = $request->only('email', 'password');
 		
-		if (Auth::guard('doctor')->attempt($credentials)) {
-            // return redirect()->intended('/dashboard');
-            return('login dokter sukses');
+		if (Auth::guard('doctors')->attempt($credentials)) {
+            return redirect()->intended('/doctor/invoice');
+            // return('login dokter sukses');
 		}
 		else {
 			return back()->withErrors(['field_name' => ['LOGIN GAGAL']]);
 		}
+    }
+    
+    public function indexInvoice(){
+        $all_invoice = DB::table('invoices')
+								->get();
+		return view('doctor.invoice',[
+			'invoice' => $all_invoice,
+		]);
+    }
+    
+    public function indexInvoiceNotTaken(){
+        $notTaken = DB::table('invoices')
+                                ->where('doctor_id', '=', 1)
+                                ->where('status', '=', 'on_hold')
+								->get();
+		return view('doctor.invoice',[
+			'invoice' => $notTaken,
+		]);
+    }
+
+    public function indexInvoiceAccepted(){
+        $taken = DB::table('invoices')
+                            ->where('status', '=', 'accepted')
+								->get();
+		return view('doctor.invoice',[
+			'invoice' => $taken,
+		]);
+    }
+    
+    public function indexInvoiceCompleted(){
+        $done = DB::table('invoices')
+                                ->where('status', '=', 'done')
+								->get();
+		return view('doctor.invoice',[
+			'invoice' => $done,
+		]);
 	}
 }

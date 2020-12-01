@@ -16,16 +16,21 @@ class RedirectIfAuthenticated
      * @param  string|null  ...$guards
      * @return mixed
      */
-    public function handle($request, Closure $next, ...$guards)
+    public function handle($request, Closure $next, $guard = null)
     {
-        $guards = empty($guards) ? [null] : $guards;
-
-        foreach ($guards as $guard) {
-            if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+        if (Auth::guard($guard)->check()){
+            switch($guard) {
+                case 'admins':
+                    return redirect(RouteServiceProvider::DASHADMIN);
+                case 'doctors':
+                    return redirect(RouteServiceProvider::DASHDOCTOR);
+                case 'user':
+                    return redirect(RouteServiceProvider::DASHUSER);
+                default:
+                    return redirect(RouteServiceProvider::HOME);
             }
         }
-
+        //redirect nya masih error
         return $next($request);
     }
 }

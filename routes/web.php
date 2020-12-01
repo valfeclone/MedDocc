@@ -43,14 +43,10 @@ Route::get('/user/register', function () {
 //route buat admin
 Route::post('/admin/login', [AdminController::class, 'login'])
     ->middleware(['guest']);
-Route::get('/admin/login', function () {
-    return view('admin.login');
-});
+Route::view('/admin/login', "admin.login")->name('admin.login');
 
 //route buat doctor
-Route::get('/doctor/login', function () {
-    return view('doctor.login');
-});
+Route::view('/doctor/login', "doctor.login")->name('doctor.login');
 Route::post('/doctor/login', [DoctorController::class, 'login' ])
     ->middleware(['guest']);
 
@@ -59,12 +55,11 @@ Route::get('/doctor/register', function () {
 });
 Route::post('/doctor/register', [DoctorController::class, 'register' ])
     ->middleware(['guest']);
-
     
 //route dasboard user
-// Route::get('/user/dashboard', function () {
-//     return view('user-dashboard');
-// });
+Route::get('/user/dashboard', function () {
+    return view('user-dashboard');
+});
     
 Route::get('/profile', function () {
     return view('profile');
@@ -94,7 +89,7 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/user/edit/{userId}', "pages.user.user-edit")->name('user.edit');
     Route::get('/user/dashboard', function () {
         return view('user-dashboard');
-    });
+    })->name('user.dashboard');
     
     //route buat buat report
     // Route::get('/user/reserve', function () {
@@ -108,7 +103,15 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
-Route::get('/admin/doctor', [ AdminController::class, 'indexDoctor']);
+
+//dashboard doctor-admin
+Route::get('/admin/doctor', [ AdminController::class, 'indexDoctor'])->name('admin.doctor');
 Route::get('/admin/doctor/verified', [ AdminController::class, 'indexDoctorVerif']);
 Route::get('/admin/doctor/unverified', [ AdminController::class, 'indexDoctorUnverif']);
 Route::post('/admin/doctor/alter/{id}', [ AdminController::class, 'alterDocPermi']);
+
+//dashboard doctor-admin
+Route::get('/doctor/invoice', [ DoctorController::class, 'indexInvoice'])->name('doctor.invoice');
+Route::get('/doctor/invoice/untaken', [ DoctorController::class, 'indexInvoiceNotTaken']);
+Route::get('/doctor/invoice/taken', [ DoctorController::class, 'indexInvoiceAccepted']);
+Route::get('/doctor/invoice/done', [ DoctorController::class, 'indexInvoiceCompleted']);

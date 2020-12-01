@@ -45,7 +45,7 @@ class UserController extends Controller
 		$credentials = $request->only('email', 'password');
 		
 		if (Auth::guard('user')->attempt($credentials)) {
-            return('login user sukses');
+            return redirect()->intended('/user/dashboard');
 		}
 		else {
 			return back()->withErrors(['field_name' => ['LOGIN GAGAL']]);

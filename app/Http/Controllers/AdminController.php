@@ -14,9 +14,9 @@ class AdminController extends Controller
 	{
 		$credentials = $request->only('email', 'password');
 		
-		if (Auth::guard('admin')->attempt($credentials)) {
-			// return redirect()->intended('dashboard');
-			return('login admin sukses');
+		if (Auth::guard('admins')->attempt($credentials)) {
+			return redirect()->intended('/admin/doctor');
+			// return('login admin sukses');
 		}
 		else {
 			return back()->withErrors(['field_name' => ['LOGIN GAGAL']]);
@@ -69,23 +69,4 @@ class AdminController extends Controller
             return redirect()->back()->with('error', 'Izin dokter gagal diubah');
         }
 	}
-
-    public function verify_pembayaran($id)
-    {
-        $user = User::find($id);
-        if ($user->path_bukti_bayar) {
-            if ($user) {
-                $user->validasi_pembayaran = true;
-                $user->save();
-                echo("tim diverifikasi");
-            }
-        } else {
-            return redirect()->back()->with('error', 'Bukti pembayaran belum tersedia');
-        }
-        // return view('pages.user.user-data', [
-        //     'user' => User::class
-        // ]);
-        return redirect()->back()->with('success', 'Verifikasi sukses');
-        ;
-    }
 }
