@@ -21,14 +21,14 @@
             <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
             <ul class="main-nav" id="main-nav-id">
                 <li>
-                    <a href="#about-us" class="nav-links" id="about-click">Profile</a>
+                    <a href="#" class="nav-links" id="about-click">Profile</a>
                 </li>
             </ul>
         </nav>
 
         <div class="jumbotron">
             <div class="user-features">
-                <a href="#">
+                <a href="/user/reserve">
                     <div class="meddoc-features shadow-drop-2-center">
                         <img src="{{ asset('assets/doctor.png') }}" alt="doctor Image" class="img-header">
                         <h3>Pesan Dokter</h3>
@@ -44,27 +44,27 @@
             <div class="features-explain">
                 <div class="features-explained">
                     <h2>Pesan Dokter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
                     </p>
                 </div>
                 <div class="features-explained">
                     <h2>Riwayat Pemeriksaan</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis 
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
+                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
                         repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
                     </p>
                 </div>
@@ -80,9 +80,9 @@
                         <h3 class="white-color logo-company"><em><strong>MEDDOC</strong></em></h3>
                         <br>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Porro magni blanditiis quos. Maxime et quis cupiditate temporibus 
-                            non nemo aspernatur beatae porro aut laudantium. Placeat maiores 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Porro magni blanditiis quos. Maxime et quis cupiditate temporibus
+                            non nemo aspernatur beatae porro aut laudantium. Placeat maiores
                             quod quaerat voluptatem iure?
                         </p>
                     </div>
@@ -141,7 +141,7 @@
                             <a href="#" class="footers-icon"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
-                     
+
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="border-top">
                 <p>Copyright 2020 MEDDOC</p>
             </div>
-        </div> 
+        </div>
     </footer>
 
 </body>

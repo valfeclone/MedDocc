@@ -60,15 +60,15 @@ Route::get('/doctor/register', function () {
 Route::post('/doctor/register', [DoctorController::class, 'register' ])
     ->middleware(['guest']);
 
-    
+
 //route dasboard user
-// Route::get('/user/dashboard', function () {
-//     return view('user-dashboard');
-// });
-    
-Route::get('/profile', function () {
-    return view('profile');
-});
+ Route::get('/user/dashboard', function () {
+     return view('user-dashboard');
+ });
+
+//Route::get('/profile', function () {
+//    return view('profile');
+//});
 
 Route::get('/reserve', function () {
     return view('reserve');
@@ -82,20 +82,20 @@ Route::get('/examination', function () {
     return view('invoice');
 });
 
-Route::get('/history', function () {
-    return view('history');
-});
+//Route::get('/history', function () {
+//    return view('history');
+//});
 
 Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
-    
+
     Route::get('/user', [ UserController::class, "index_view" ])->name('user');
     Route::view('/user/new', "pages.user.user-new")->name('user.new');
     Route::view('/user/edit/{userId}', "pages.user.user-edit")->name('user.edit');
     Route::get('/user/dashboard', function () {
         return view('user-dashboard');
     });
-    
+
     //route buat buat report
     // Route::get('/user/reserve', function () {
     //     return view('user.makereport');
@@ -103,7 +103,7 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/user/reserve', "user.makereport");
     Route::post('/user/reserve', [ReportController::class, 'makeReport' ]);
 });
-    
+
 Route::get('/about-us', function () {
     return view('about-us');
 });
