@@ -19,7 +19,7 @@
             <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
             <ul class="main-nav" id="main-nav-id">
                 <li>
-                    <a href="#about-us" class="nav-links" id="about-click">About Us</a>
+                    <a href="/about-us" class="nav-links" id="about-click">About Us</a>
                 </li>
                 <li>
                     <a href="#meet-guide-id" class="nav-links" id="meet-click">Contact</a>

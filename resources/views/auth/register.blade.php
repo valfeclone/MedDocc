@@ -19,7 +19,7 @@
               <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
               <ul class="main-nav" id="main-nav-id">
                   <li>
-                      <a href="#about-us" class="nav-links" id="about-click">About Us</a>
+                      <a href="/about-us" class="nav-links" id="about-click">About Us</a>
                   </li>
                   <li>
                       <a href="#meet-guide-id" class="nav-links" id="meet-click">Contact</a>
@@ -46,12 +46,12 @@
 
             <div>
                 <x-jet-label value="{{ __('Nama') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="Fadhlan Pasyah" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-input class="block mt-1 w-full" placeholder="Nama Anda" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label value="{{ __('Email') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="fadhlan456@gmail.com" type="email" name="email" :value="old('email')" required />
+                <x-jet-input class="block mt-1 w-full" placeholder="NamaAnda@example.com" type="email" name="email" :value="old('email')" required />
             </div>
 			<br>
 			<div>

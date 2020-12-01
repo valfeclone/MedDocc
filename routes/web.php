@@ -55,6 +55,7 @@ Route::get('/doctor/register', function () {
 });
 Route::post('/doctor/register', [DoctorController::class, 'register' ])
     ->middleware(['guest']);
+<<<<<<< HEAD
     
 //route dasboard user
 Route::get('/user/dashboard', function () {
@@ -64,6 +65,18 @@ Route::get('/user/dashboard', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+=======
+
+
+//route dasboard user
+ Route::get('/user/dashboard', function () {
+     return view('user-dashboard');
+ });
+
+//Route::get('/profile', function () {
+//    return view('profile');
+//});
+>>>>>>> 20bde2fbc7a413de9b9a582a4f025a39ce24ccba
 
 Route::get('/reserve', function () {
     return view('reserve');
@@ -77,20 +90,25 @@ Route::get('/examination', function () {
     return view('invoice');
 });
 
-Route::get('/history', function () {
-    return view('history');
-});
+//Route::get('/history', function () {
+//    return view('history');
+//});
 
 Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/dashboard', "dashboard")->name('dashboard');
-    
+
     Route::get('/user', [ UserController::class, "index_view" ])->name('user');
     Route::view('/user/new', "pages.user.user-new")->name('user.new');
     Route::view('/user/edit/{userId}', "pages.user.user-edit")->name('user.edit');
     Route::get('/user/dashboard', function () {
         return view('user-dashboard');
+<<<<<<< HEAD
     })->name('user.dashboard');
     
+=======
+    });
+
+>>>>>>> 20bde2fbc7a413de9b9a582a4f025a39ce24ccba
     //route buat buat report
     // Route::get('/user/reserve', function () {
     //     return view('user.makereport');
@@ -98,7 +116,7 @@ Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
     Route::view('/user/reserve', "user.makereport");
     Route::post('/user/reserve', [ReportController::class, 'makeReport' ]);
 });
-    
+
 Route::get('/about-us', function () {
     return view('about-us');
 });
@@ -109,9 +127,12 @@ Route::get('/admin/doctor', [ AdminController::class, 'indexDoctor'])->name('adm
 Route::get('/admin/doctor/verified', [ AdminController::class, 'indexDoctorVerif']);
 Route::get('/admin/doctor/unverified', [ AdminController::class, 'indexDoctorUnverif']);
 Route::post('/admin/doctor/alter/{id}', [ AdminController::class, 'alterDocPermi']);
+<<<<<<< HEAD
 
 //dashboard doctor-admin
 Route::get('/doctor/invoice', [ DoctorController::class, 'indexInvoice'])->name('doctor.invoice');
 Route::get('/doctor/invoice/untaken', [ DoctorController::class, 'indexInvoiceNotTaken']);
 Route::get('/doctor/invoice/taken', [ DoctorController::class, 'indexInvoiceAccepted']);
 Route::get('/doctor/invoice/done', [ DoctorController::class, 'indexInvoiceCompleted']);
+=======
+>>>>>>> 20bde2fbc7a413de9b9a582a4f025a39ce24ccba
