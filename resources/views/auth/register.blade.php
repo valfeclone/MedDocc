@@ -46,12 +46,12 @@
 
             <div>
                 <x-jet-label value="{{ __('Nama') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="Fadhlan Pasyah" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-jet-input class="block mt-1 w-full" placeholder="Your Name" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label value="{{ __('Email') }}" />
-                <x-jet-input class="block mt-1 w-full" placeholder="fadhlan456@gmail.com" type="email" name="email" :value="old('email')" required />
+                <x-jet-input class="block mt-1 w-full" placeholder="yourname@example.com" type="email" name="email" :value="old('email')" required />
             </div>
 			<br>
 			<div>
