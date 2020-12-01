@@ -21,7 +21,7 @@
             <a href="/home" class="logo-company"><em><strong>MEDDOC</strong></em></a>
             <ul class="main-nav" id="main-nav-id">
                 <li>
-                    <a href="#about-us" class="nav-links" id="about-click">About Us</a>
+                    <a href="/about-us" class="nav-links" id="about-click">About Us</a>
                 </li>
                 <li>
                     <a href="#meet-guide-id" class="nav-links" id="meet-click">Contact</a>
@@ -40,17 +40,17 @@
             <div class="image-bg">
                 <div class="text-bg">
                     <h1>Our Company</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit 
-                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis 
-                        itaque fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit 
-                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit
+                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis
+                        itaque fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit
+                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis
                         itaque fugit.
                     </p>
                 </div>
             </div>
-            
+
         </div>
     </header>
 
