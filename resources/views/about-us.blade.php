@@ -40,13 +40,12 @@
             <div class="image-bg">
                 <div class="text-bg">
                     <h1>Our Company</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit
-                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis
-                        itaque fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Deserunt nisi ab aut accusantium autem, minima inventore facere velit
-                        totam necessitatibus enim neque adipisci hic ipsa voluptatem minus blanditiis
-                        itaque fugit.
+                    <p>Kita terdiri dari 4 orang yang ingin memudahkan rakyat Indonesia dalam mencari kesehatan, seiring
+                      dengan masa pandemi yang sedang berlangsung ini kita harus menjaga diri agar tetap sehat. Tetapi,
+                      jika badan kita mengalami penurunan atau kita sakit, pada masa ini kita sedikit kesulitan untuk keluar
+                      dari rumah kita, karena takut akan penularan kepada orang disekitar kita. Untuk itu kita membuat platform
+                      ini untuk membantu teman kita yang sedang sakit agar tidak perlu keluar dari rumah tetapi bisa memanggil
+                      dokter untuk dilakukan check up dan menjalani masa pengobatan.
                     </p>
                 </div>
             </div>
@@ -69,61 +68,35 @@
                 <div class="container-card">
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{ asset('assets/attention.png') }}">
                         </div>
                         <div class="card-section">
                             <h3>Praktis</h3>
                             <br>
                             <p>
-                                Bisakah kita tetap memberi, walau tak suci.
-                                Bisakah terus mengobati, walau membiru.
-                                Cukup besar tuk mengampuni, tuk mengasihi.
-                                Tanpa memperhitungkan masa yang lalu.
+                                Membuat proses bertemu dengan dokter praktis, cukup 1 tombol maka dokter akan langsung
+                                datang ke alamat yang dituju.
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{ asset('assets/attention.png') }}">
                         </div>
                         <div class="card-section">
-                            <h3>Praktis</h3>
+                            <h3>Cepat</h3>
                             <br>
                             <p>
-                                Bisakah kita tetap memberi, walau tak suci.
-                                Bisakah terus mengobati, walau membiru.
-                                Cukup besar tuk mengampuni, tuk mengasihi.
-                                Tanpa memperhitungkan masa yang lalu.
+                                Tidak lagi kita perlu mengantri untuk praktik dengan dokter.
                             </p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-image">
-                            <img src="{{ asset('assets/attention.png') }}">
                         </div>
                         <div class="card-section">
-                            <h3>Praktis</h3>
+                            <h3>Efisien</h3>
                             <br>
                             <p>
-                                Bisakah kita tetap memberi, walau tak suci.
-                                Bisakah terus mengobati, walau membiru.
-                                Cukup besar tuk mengampuni, tuk mengasihi.
-                                Tanpa memperhitungkan masa yang lalu.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="{{ asset('assets/attention.png') }}">
-                        </div>
-                        <div class="card-section">
-                            <h3>Praktis</h3>
-                            <br>
-                            <p>
-                                Bisakah kita tetap memberi, walau tak suci.
-                                Bisakah terus mengobati, walau membiru.
-                                Cukup besar tuk mengampuni, tuk mengasihi.
-                                Tanpa memperhitungkan masa yang lalu.
+                                Tidak ada lagi waktu yang terbuang ! Tinggal pesan dokter maka dokter akan langsung datang.
                             </p>
                         </div>
                     </div>

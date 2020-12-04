@@ -44,28 +44,12 @@
             <div class="features-explain">
                 <div class="features-explained">
                     <h2>Pesan Dokter</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
+                    <p>Pesan Dokter dan isi alamatmu sekarang juga !
                     </p>
                 </div>
                 <div class="features-explained">
                     <h2>Riwayat Pemeriksaan</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo blanditiis
-                        quisquam rerum debitis reprehenderit error rem, aspernatur animi hic, minus
-                        repellat ad! Nostrum, est iure esse quidem sapiente nulla reiciendis!
+                    <p>Cek riwayat dari pemeriksaan sebelumnya.
                     </p>
                 </div>
             </div>
@@ -80,10 +64,8 @@
                         <h3 class="white-color logo-company"><em><strong>MEDDOC</strong></em></h3>
                         <br>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Porro magni blanditiis quos. Maxime et quis cupiditate temporibus
-                            non nemo aspernatur beatae porro aut laudantium. Placeat maiores
-                            quod quaerat voluptatem iure?
+                          MEDDOC adalah platform untuk memesan dokter panggilan ke rumah atau tempatmu berada, tinggal klik pesan
+                          maka dokter akan langsung jalan ke alamat yang dituju.
                         </p>
                     </div>
                 </div>

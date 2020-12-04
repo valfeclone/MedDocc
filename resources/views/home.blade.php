@@ -43,8 +43,7 @@
                 <div class="column-content">
                     <p class="title-header green-light-color">Pesan Dokter</span></p>
                     <p class="title-header green-light-color">Sekarang!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mauris justo, suscipit
-                        sit amet nunc quis, faucibus ultricies nunc. Nullam efficitur semper elit, in vulputate quam.
+                    <p>Pesan Dokter sekarang juga !
                     </p>
                 </div>
                 <div class="column-button">
@@ -62,10 +61,8 @@
                         <h3 class="white-color logo-company"><em><strong>MEDDOC</strong></em></h3>
                         <br>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Porro magni blanditiis quos. Maxime et quis cupiditate temporibus 
-                            non nemo aspernatur beatae porro aut laudantium. Placeat maiores 
-                            quod quaerat voluptatem iure?
+                            MEDDOC adalah platform untuk memesan dokter panggilan ke rumah atau tempatmu berada, tinggal klik pesan
+                            maka dokter akan langsung jalan ke alamat yang dituju.
                         </p>
                     </div>
                 </div>
@@ -123,7 +120,7 @@
                             <a href="#" class="footers-icon"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </div>
-                     
+
                 </div>
             </div>
         </div>
@@ -131,7 +128,7 @@
             <div class="border-top">
                 <p>Copyright 2020 MEDDOC</p>
             </div>
-        </div> 
+        </div>
     </footer>
 
 </body>
